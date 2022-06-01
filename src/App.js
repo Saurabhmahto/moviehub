@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Homepage from "./components/Homepage";
 import axios from "axios";
 import { useQuery } from "react-query";
-
+//hello how r u
 function App() {
   const [startpage, setStartpage] = useState(true);
   const [title, setTitle] = useState("");
