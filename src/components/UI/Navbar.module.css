@@ -1,0 +1,62 @@
+.navbar {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  padding: 1% 2%;
+  justify-content: space-between;
+  border-bottom: 3px solid #222;
+}
+.nav_logo {
+  font-size: 30px;
+  color: #ffff;
+  font-family: "Righteous", cursive;
+  font-weight: 900;
+  text-shadow: #fff;
+}
+
+.nav_logo span {
+  color: #dd0611;
+}
+
+.nav_links {
+  display: flex;
+  padding: 8px 2%;
+  gap: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.nav_link_item {
+  cursor: pointer;
+}
+
+.nav_search {
+  width: 40%;
+  padding: 8px 2%;
+  display: flex;
+  gap: 5px;
+}
+.nav_search input {
+  width: 80%;
+  outline: none;
+  border-radius: 1vh;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+.button_search {
+  background: #000;
+  color: #fff;
+}
+.dropdown_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.country_logo {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; */
+}

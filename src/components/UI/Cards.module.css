@@ -1,0 +1,29 @@
+.card {
+  width: 100%;
+  padding: 2%;
+  margin: 0;
+  /* border: 2px solid rebeccapurple; */
+}
+.card_row {
+  width: 100%;
+  display: flex;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.card_col {
+  flex-basis: 15%;
+  position: relative;
+}
+
+.img_cont {
+  width: 100%;
+  height: 100%;
+}
+.rating {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: yellow;
+}
