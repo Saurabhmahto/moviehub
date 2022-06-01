@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
-const Navbar = ({ setTitle, setApi }) => {
+const Navbar = ({ setKey, setApi }) => {
   const [input_value, setInput_value] = useState("");
   const [input, setInput] = useState("");
   return (
@@ -13,8 +13,9 @@ const Navbar = ({ setTitle, setApi }) => {
         <div
           className={styles.nav_link_item}
           onClick={() => {
+            setKey("home");
             setApi(
-              `https://imdb-api.com/API/AdvancedSearch/k_buqtaqsw?title=${""}&countries=in&languages=hi&count=100`
+              "https://imdb-api.com/API/AdvancedSearch/k_buqtaqsw?countries=in&languages=hi&count=100"
             );
           }}
         >
@@ -23,6 +24,7 @@ const Navbar = ({ setTitle, setApi }) => {
         <div
           className={styles.nav_link_item}
           onClick={() => {
+            setKey("TV_series");
             setApi(
               `https://imdb-api.com/API/AdvancedSearch/k_buqtaqsw?title_type=tv_series&countries=in&languages=hi`
             );
@@ -61,6 +63,7 @@ const Navbar = ({ setTitle, setApi }) => {
           className={styles.button_search}
           type="submit"
           onClick={() => {
+            setKey(input);
             setApi(
               `https://imdb-api.com/en/API/SearchMovie/k_buqtaqsw/${input}`
             );
